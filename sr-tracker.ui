@@ -7,14 +7,217 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>600</height>
+    <height>607</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>20</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>SR TRACKER</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="main_widget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>631</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="main_layout">
+     <item>
+      <layout class="QHBoxLayout" name="t_layout">
+       <item>
+        <widget class="QLabel" name="t_icon">
+         <property name="text">
+          <string>img</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="t_number">
+         <property name="text">
+          <string>number</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="t_right">
+         <item>
+          <widget class="QLineEdit" name="t_edit"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="t_update">
+           <property name="text">
+            <string>Update</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_1">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="d_layout">
+       <item>
+        <widget class="QLabel" name="d_icon">
+         <property name="text">
+          <string>img</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="d_number">
+         <property name="text">
+          <string>number</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="d_right">
+         <item>
+          <widget class="QLineEdit" name="d_edit"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="d_update">
+           <property name="text">
+            <string>Update</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="s_layout">
+       <item>
+        <widget class="QLabel" name="s_icon">
+         <property name="text">
+          <string>img</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="s_number">
+         <property name="text">
+          <string>number</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="s_right">
+         <item>
+          <widget class="QLineEdit" name="s_edit"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="s_update">
+           <property name="text">
+            <string>Update</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="bottom_layout">
+       <item>
+        <spacer name="left_spacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="show_button">
+         <property name="text">
+          <string>Show graphs</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="middle_spacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="delete_button">
+         <property name="text">
+          <string>Clear all</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="right_spacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
  </widget>
+ <tabstops>
+  <tabstop>t_edit</tabstop>
+  <tabstop>t_update</tabstop>
+  <tabstop>d_edit</tabstop>
+  <tabstop>d_update</tabstop>
+  <tabstop>s_edit</tabstop>
+  <tabstop>s_update</tabstop>
+  <tabstop>show_button</tabstop>
+  <tabstop>delete_button</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
