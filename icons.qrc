@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icons/chart-up.png</file>
+    <file>icons/database-delete.png</file>
+    <file>icons/d150.png</file>
+    <file>icons/s150.png</file>
+    <file>icons/t150.png</file>
+  </qresource>
+</RCC>

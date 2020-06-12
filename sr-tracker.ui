@@ -6,57 +6,143 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>607</height>
+    <width>627</width>
+    <height>675</height>
    </rect>
   </property>
-  <property name="font">
-   <font>
-    <family>Segoe UI</family>
-    <pointsize>20</pointsize>
-   </font>
+  <property name="minimumSize">
+   <size>
+    <width>627</width>
+    <height>675</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>627</width>
+    <height>675</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>SR TRACKER</string>
   </property>
   <widget class="QWidget" name="main_widget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+      color: rgb(250, 156, 30);
+      background: black;
+}
+QLabel {
+	font: 100pt &quot;Verdana&quot;;
+}
+QLineEdit {
+	color: black;
+	font: 10pt &quot;Verdana&quot;;
+	background: white;
+	selection-background-color: rgb(250, 156, 30);
+	border: none;
+	padding: 0 2px;
+}
+QPushButton {
+	background-color: rgb(250, 156, 30);
+	color: white;
+	font: 10pt &quot;Verdana&quot;;
+	border: 2px solid;
+	padding: 1 5px;
+}
+QPushButton:pressed {
+	background-color: white;
+	color: black;
+}
+</string>
+   </property>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>631</width>
-      <height>561</height>
+      <width>627</width>
+      <height>1153</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="main_layout">
+     <property name="leftMargin">
+      <number>30</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>30</number>
+     </property>
+     <property name="bottomMargin">
+      <number>500</number>
+     </property>
      <item>
       <layout class="QHBoxLayout" name="t_layout">
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
        <item>
         <widget class="QLabel" name="t_icon">
-         <property name="text">
-          <string>img</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="t_number">
-         <property name="text">
-          <string>number</string>
+         <property name="pixmap">
+          <pixmap resource="icons.qrc">:/icon/icons/t150.png</pixmap>
          </property>
         </widget>
        </item>
        <item>
         <layout class="QVBoxLayout" name="t_right">
          <item>
-          <widget class="QLineEdit" name="t_edit"/>
-         </item>
-         <item>
-          <widget class="QPushButton" name="t_update">
+          <widget class="QLabel" name="t_number">
            <property name="text">
-            <string>Update</string>
+            <string>3333</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
            </property>
           </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="t_bottom">
+           <item>
+            <spacer name="t_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="t_edit">
+             <property name="maximumSize">
+              <size>
+               <width>65</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="t_button">
+             <property name="maximumSize">
+              <size>
+               <width>65</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>UPDATE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </item>
@@ -64,6 +150,11 @@
      </item>
      <item>
       <widget class="Line" name="line_1">
+       <property name="styleSheet">
+        <string notr="true">Line {
+	border: 2px solid rgb(250, 156, 30);
+}</string>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -71,31 +162,70 @@
      </item>
      <item>
       <layout class="QHBoxLayout" name="d_layout">
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
        <item>
         <widget class="QLabel" name="d_icon">
-         <property name="text">
-          <string>img</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="d_number">
-         <property name="text">
-          <string>number</string>
+         <property name="pixmap">
+          <pixmap resource="icons.qrc">:/icon/icons/d150.png</pixmap>
          </property>
         </widget>
        </item>
        <item>
         <layout class="QVBoxLayout" name="d_right">
          <item>
-          <widget class="QLineEdit" name="d_edit"/>
-         </item>
-         <item>
-          <widget class="QPushButton" name="d_update">
+          <widget class="QLabel" name="d_number">
            <property name="text">
-            <string>Update</string>
+            <string>3333</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
            </property>
           </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="d_bottom">
+           <item>
+            <spacer name="d_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="d_edit">
+             <property name="maximumSize">
+              <size>
+               <width>65</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="d_button">
+             <property name="maximumSize">
+              <size>
+               <width>65</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>UPDATE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </item>
@@ -103,6 +233,11 @@
      </item>
      <item>
       <widget class="Line" name="line_2">
+       <property name="styleSheet">
+        <string notr="true">Line {
+	border: 2px solid rgb(250, 156, 30);
+}</string>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -110,114 +245,132 @@
      </item>
      <item>
       <layout class="QHBoxLayout" name="s_layout">
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
        <item>
         <widget class="QLabel" name="s_icon">
-         <property name="text">
-          <string>img</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="s_number">
-         <property name="text">
-          <string>number</string>
+         <property name="pixmap">
+          <pixmap resource="icons.qrc">:/icon/icons/s150.png</pixmap>
          </property>
         </widget>
        </item>
        <item>
         <layout class="QVBoxLayout" name="s_right">
          <item>
-          <widget class="QLineEdit" name="s_edit"/>
-         </item>
-         <item>
-          <widget class="QPushButton" name="s_update">
+          <widget class="QLabel" name="s_number">
            <property name="text">
-            <string>Update</string>
+            <string>3333</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
            </property>
           </widget>
          </item>
+         <item>
+          <layout class="QHBoxLayout" name="s_bottom">
+           <item>
+            <spacer name="s_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="s_edit">
+             <property name="maximumSize">
+              <size>
+               <width>65</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="s_button">
+             <property name="maximumSize">
+              <size>
+               <width>65</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>UPDATE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
         </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="Line" name="line_3">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="bottom_layout">
-       <item>
-        <spacer name="left_spacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="show_button">
-         <property name="text">
-          <string>Show graphs</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="middle_spacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="delete_button">
-         <property name="text">
-          <string>Clear all</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="right_spacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
     </layout>
    </widget>
   </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>627</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar {
+	background-color: white;
+}
+
+QMenuBar::item {
+	font: 10pt &quot;Verdana&quot;;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+    background: rgb(250, 156, 30);
+}</string>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionShow_graphs"/>
+    <addaction name="separator"/>
+    <addaction name="actionClear_all_data"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionShow_graphs">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/icons/chart-up.png</normaloff>:/icon/icons/chart-up.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show graphs</string>
+   </property>
+  </action>
+  <action name="actionClear_all_data">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/icons/database-delete.png</normaloff>:/icon/icons/database-delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear all data</string>
+   </property>
+  </action>
  </widget>
- <tabstops>
-  <tabstop>t_edit</tabstop>
-  <tabstop>t_update</tabstop>
-  <tabstop>d_edit</tabstop>
-  <tabstop>d_update</tabstop>
-  <tabstop>s_edit</tabstop>
-  <tabstop>s_update</tabstop>
-  <tabstop>show_button</tabstop>
-  <tabstop>delete_button</tabstop>
- </tabstops>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
