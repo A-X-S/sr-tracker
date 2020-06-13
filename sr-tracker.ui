@@ -53,6 +53,9 @@ QPushButton:pressed {
 	background-color: white;
 	color: black;
 }
+Line {
+	border: 2px solid rgb(250, 156, 30);
+}
 </string>
    </property>
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -150,11 +153,6 @@ QPushButton:pressed {
      </item>
      <item>
       <widget class="Line" name="line_1">
-       <property name="styleSheet">
-        <string notr="true">Line {
-	border: 2px solid rgb(250, 156, 30);
-}</string>
-       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -233,11 +231,6 @@ QPushButton:pressed {
      </item>
      <item>
       <widget class="Line" name="line_2">
-       <property name="styleSheet">
-        <string notr="true">Line {
-	border: 2px solid rgb(250, 156, 30);
-}</string>
-       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
